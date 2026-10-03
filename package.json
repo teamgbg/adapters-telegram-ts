@@ -56,7 +56,7 @@
 		"./types": "./src/types.ts",
 		"./types.ts": "./src/types.ts"
 	},
-	"repository": "https://github.com/teamgbg/bun-adapters-telegram",
+	"repository": "https://github.com/teamgbg/adapters-telegram-ts",
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org"
 	}
