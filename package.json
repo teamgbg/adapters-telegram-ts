@@ -8,7 +8,7 @@
 	"capability": "Telegram surface: tdl-backed Telegram client wrapper with central log integration, single sanctioned Telegram integration.",
 	"tier": "adapters",
 	"type": "module",
-	"version": "1.0.189",
+	"version": "1.0.196",
 	"description": "Telegram surface: tdl-backed Telegram client wrapper with central log integration, single sanctioned Telegram integration.",
 	"imports": {
 		"#telegram/*": "./src/*",
