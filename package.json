@@ -35,8 +35,6 @@
 		"./auth-actions.ts": "./src/auth-actions.ts",
 		"./auth-handlers": "./src/auth-handlers.ts",
 		"./auth-handlers.ts": "./src/auth-handlers.ts",
-		"./auth-lifecycle": "./src/auth-lifecycle.ts",
-		"./auth-lifecycle.ts": "./src/auth-lifecycle.ts",
 		"./auth-qr": "./src/auth-qr.ts",
 		"./auth-qr.ts": "./src/auth-qr.ts",
 		"./client": "./src/client.ts",
