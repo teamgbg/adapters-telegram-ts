@@ -14,14 +14,14 @@
 import { createLogger } from "@teamscala/logger/creator";
 
 import {
-	requestTdlibQrCode,
 	submitTdlibAuthCode,
 	submitTdlibPassword,
 	submitTdlibPhoneNumber,
 } from "./auth-actions.ts";
 import { waitForTdlibAuthState } from "./auth-lifecycle.ts";
+import { requestTdlibQrCode } from "./auth-qr.ts";
 import { getTelegramClients, resolveTdlibClient } from "./client.ts";
-import type { AuthStatus } from "./types.ts";
+import type { AuthStatus } from "@teamscala/telegram-types/types";
 
 const logger = createLogger({ service: "telegram" });
 

@@ -40,7 +40,7 @@ import {
 	registerTrackedTdlibClient,
 	setTdlibClientStatus,
 } from "./client-store.ts";
-import type { TdlibClientEntry } from "./types.ts";
+import type { TdlibClientEntry } from "@teamscala/telegram-types/types";
 
 const logger = createLogger({ service: "telegram" });
 

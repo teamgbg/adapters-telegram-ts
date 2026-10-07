@@ -6,13 +6,13 @@
  * client-store.ts — describe what this file does.
  */
 import path from "node:path";
-import { mapTdlibAuthStatus } from "./auth-status.ts";
+import { mapTdlibAuthStatus } from "@teamscala/telegram-types/auth-status";
 import type {
 	AuthStatus,
 	ClientState,
 	TdlibAuthState,
 	TdlibClientEntry,
-} from "./types.ts";
+} from "@teamscala/telegram-types/types";
 
 export function getTdlibClientMap<TClient>(
 	globalKey: string = "tdlibClients",

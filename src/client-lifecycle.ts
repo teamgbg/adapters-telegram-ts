@@ -14,7 +14,7 @@ import { createRequire } from "node:module";
 import { createLogger } from "@teamscala/logger/creator";
 import * as tdl from "tdl";
 
-import type { TdlibClientEntry, TdlibClientOptions } from "./types.ts";
+import type { TdlibClientOptions } from "@teamscala/telegram-types/types";
 
 const logger = createLogger({ service: "telegram" });
 const _require = createRequire(import.meta.url);
@@ -78,24 +78,4 @@ export function createTdlibClient(options: TdlibClientOptions) {
 			system_version: options.systemVersion ?? "Linux",
 		},
 	});
-}
-
-export async function closeTrackedTdlibClients<
-	TClient extends { close(): Promise<void> },
->(options: {
-	clients: Map<string, TdlibClientEntry<TClient>>;
-	onError?: (key: string, error: unknown) => void;
-}): Promise<void> {
-	const closePromises: Promise<void>[] = [];
-
-	for (const [key, entry] of options.clients) {
-		closePromises.push(
-			entry.client.close().catch((error) => {
-				options.onError?.(key, error);
-			}),
-		);
-	}
-
-	await Promise.all(closePromises);
-	options.clients.clear();
 }
