@@ -18,7 +18,7 @@ import {
 	submitTdlibPassword,
 	submitTdlibPhoneNumber,
 } from "./auth-actions.ts";
-import { waitForTdlibAuthState } from "./auth-lifecycle.ts";
+import { waitForTdlibAuthState } from "@teamscala/telegram-auth-lifecycle/auth-lifecycle";
 import { requestTdlibQrCode } from "./auth-qr.ts";
 import { getTelegramClients, resolveTdlibClient } from "./client.ts";
 import type { AuthStatus } from "@teamscala/telegram-types/types";

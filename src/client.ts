@@ -33,7 +33,7 @@
 		 */
 
 import { createLogger } from "@teamscala/logger/creator";
-import { attachTdlibAuthLifecycle } from "./auth-lifecycle.ts";
+import { attachTdlibAuthLifecycle } from "@teamscala/telegram-auth-lifecycle/auth-lifecycle";
 import { createTdlibClient } from "./client-lifecycle.ts";
 import {
 	getTdlibClientMap,

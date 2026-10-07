@@ -8,7 +8,7 @@
  * (sanity check for apiId/apiHash). The portal auth flow drives these in
  * sequence; they form one canonical "TDLib auth actions" surface.
  */
-import { waitForTdlibAuthState } from "./auth-lifecycle.ts";
+import { waitForTdlibAuthState } from "@teamscala/telegram-auth-lifecycle/auth-lifecycle";
 
 import type { TdlibClientEntry } from "@teamscala/telegram-types/types";
 
