@@ -38,8 +38,6 @@
 		"./auth-lifecycle.ts": "./src/auth-lifecycle.ts",
 		"./auth-qr": "./src/auth-qr.ts",
 		"./auth-qr.ts": "./src/auth-qr.ts",
-		"./auth-status": "./src/auth-status.ts",
-		"./auth-status.ts": "./src/auth-status.ts",
 		"./client": "./src/client.ts",
 		"./client.ts": "./src/client.ts",
 		"./client-close": "./src/client-close.ts",
@@ -57,9 +55,7 @@
 		"./send-handler": "./src/send-handler.ts",
 		"./send-handler.ts": "./src/send-handler.ts",
 		"./session-autoload": "./src/session-autoload.ts",
-		"./session-autoload.ts": "./src/session-autoload.ts",
-		"./types": "./src/types.ts",
-		"./types.ts": "./src/types.ts"
+		"./session-autoload.ts": "./src/session-autoload.ts"
 	},
 	"repository": "https://github.com/teamgbg/adapters-telegram-ts",
 	"publishConfig": {
